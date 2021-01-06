@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- mycss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jkl0xrt.css">
+    <script src="https://kit.fontawesome.com/d7a8f8bccd.js" crossorigin="anonymous"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="css/mystyle.css">
+
+
+    <title>Porfolio</title>
+</head>
+<style>
+    body {
+        background-repeat: no-repeat;
+
+        background-position: 100% 10%;
+        -webkit-background-size: 60%;
+        -moz-background-size: 60%;
+        -o-background-size: 60%;
+        background-size: 60%;
+    }
+
+    body {
+        background-image: url(images/bg1cutlight.svg);
+        transition: 0.3s ease background-image;
+        background-color: #2B3037;
+        transition: 0.3s ease background-color;
+    }
+
+    body.scrolled {
+        background-image: url(images/bg1cutcrossorange.svg);
+        transition: 0.3s ease background-image;
+        background-color: #EBEBEB;
+        transition: 0.3s ease background-color;
+    }
+
+    .navbar a {
+        color: #FF5733;
+    }
+
+    .navbar a:hover {
+        color: #ffffff;
+    }
+
+    .navbar2 a {
+        color: #2B3037;
+    }
+
+    .active,
+    .navbar2 a:hover {
+        color: #FF5733;
+    }
+
+    .bg-navbar {
+        background: linear-gradient(#2B3037 100%, #2B3037 100%);
+        z-index: 98;
+    }
+
+    .bg-navbar.scrolled {
+        background: linear-gradient(#EBEBEB 100%, #EBEBEB 100%);
+        z-index: 98;
+    }
+
+    .navlogo:hover {
+        filter: invert(100%) sepia(14%) saturate(1%) hue-rotate(77deg) brightness(300%) contrast(200%);
+    }
+
+    .navlogo2:hover {
+        filter: invert(44%) sepia(61%) saturate(2510%) hue-rotate(339deg) brightness(99%) contrast(104%);
+    }
+
+    .hamburger:hover,
+    .hamburger.is-active {
+        filter: invert(100%) sepia(14%) saturate(1%) hue-rotate(77deg) brightness(300%) contrast(200%);
+        background: rgba(0, 0, 0, 0.0) !important;
+    }
+
+    .hamburger2:hover,
+    .hamburger2.is-active {
+        filter: invert(44%) sepia(61%) saturate(2510%) hue-rotate(339deg) brightness(99%) contrast(104%);
+        background: rgba(0, 0, 0, 0.0) !important;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler-icon:hover {
+        background-image: url(images/hbopen.svg) !important;
+        transition: all 0.1s linear 0s;
+    }
+
+    .navbar-toggler-icon:active {
+        background-image: url(images/hbopen.svg) !important;
+        transition: all 0.1s linear 0s;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url(images/hbclosed.svg) !important;
+        filter: invert(44%) sepia(61%) saturate(2510%) hue-rotate(339deg) brightness(99%) contrast(104%);
+        transition: all 0.1s linear 0s;
+    }
+
+    .navbar-toggler-icon2 {
+        background-image: url(images/hbclosed.svg) !important;
+        filter: invert(100%) sepia(14%) saturate(1%) hue-rotate(77deg) brightness(0%) contrast(200%);
+        transition: all 0.1s linear 0s;
+
+    }
+
+    #navbar-close {
+        color: #888;
+        width: 22px;
+        height: 14px;
+    }
+
+    .linecontact:hover {
+        text-decoration: underline;
+    }
+
+    .nav-item:hover::before {
+        transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+    }
+
+    .nav-item:hover::after {
+        transition: border 0.1s linear 0s;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        body {
+            background-position: 100% 8%;
+            -webkit-background-size: 80%;
+            -moz-background-size: 80%;
+            -o-background-size: 80%;
+            background-size: 80%;
+        }
+
+        .btext1 {
+            font-size: 1.4rem;
+        }
+
+        .btext2 {
+            font-size: 1.25rem;
+        }
+
+        .introheader2 {
+            margin-bottom: 53%;
+        }
+    }
+
+</style>
+
+<body>
+    <a class="navbar-brand logonav order-2 sticky-top float-left smart-scroll" href="index.html">
+        <img class="logoorange logonone navlogo" src="images/logo.svg" alt="rjt logo">
+    </a>
+    <nav class='navbar navbar-expand-lg bg-navbar smart-scroll sticky-top navbarfont'>
+        <a class='navbar-brand' href='#'></a><button class='navbar-toggler fancy-toggler custom-toggler hamburger' type='button' data-toggle='collapse' data-target='#navbar-body' aria-controls='navbar-body' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button>
+        <div class='collapse navbar-collapse' id='navbar-body'>
+            <ul class='navbar-nav mr-auto'></ul>
+            <ul class='navbar-nav ml-auto'>
+                <li class='nav-item'><a class='nav-link rmt' href='index.html'>Home</a></li>
+                <li class='nav-item'><a class='nav-link rmt' href='index.html'>About</a></li>
+                <li class='nav-item'><a class='nav-link rmt' href='work.html'>Work</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- large screen -->
+    <div class="container d-none d-sm-block">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="introheader">Hi! I'm Robert.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <p class="introheader2">— I'm a designer currently<br>&nbsp &nbsp &nbsp living and learning in Dublin.</p>
+            </div>
+        </div>
+    </div>
+    <!-- small screen -->
+    <div class="container d-block d-sm-none">
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-11">
+                <p class="introheader">Hi! I'm Robert.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-10">
+                <p class="introheader2">— I'm a designer currently<br>&nbsp &nbsp &nbsp living and learning in Dublin.</p>
+            </div>
+        </div>
+    </div>
+    <!-- large screen -->
+    <div class="container btextm1 d-none d-sm-block">
+        <div class="row">
+            <div class="col-md-11 btext1">
+                <p>I'm a design student currently on my 3rd year studying Visual Communication Design at the Institute of Art, Design + Technology, Dún Laoghaire. I have a wide range of interests ranging from print to screen design.
+                </p>
+            </div>
+        </div>
+        <div class="row btextm2 textmove">
+            <div class="col-md-1 btext2 btext2em">
+                <p>—</p>
+            </div>
+            <div class="col-md-7 btext2">
+                <p>I’m always looking for opportunities to gain experience, If you like my work, or you are looking for a designer who is passionate about design, please drop me a <span class="linecontact">line</span>.</p>
+            </div>
+        </div>
+    </div>
+    <!-- small screen -->
+    <div class="container btextm1 d-block d-sm-none">
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-10 btext1">
+                <p>I'm a design student currently<br> on my 3rd year studying Visual Communication Design<br> at the Institute of Art, Design + Technology, Dún Laoghaire. <br>I have a wide range of interests ranging from print to screen design.
+                </p>
+            </div>
+        </div>
+        <div class="row btextm2 textmove btext2">
+            <div class="col-1">
+            </div>
+            <div class="col-1 btext2em">
+                <p>—</p>
+            </div>
+            <div class="col-9">
+                <p>I’m always looking for opportunities<br> to gain experience, If you like my <br>work, or you are looking for a designer<br> who is passionate about design, please drop me a <span class="linecontact">line</span>.</p>
+            </div>
+        </div>
+    </div>
+    <!-- image slide -->
+    <section class="slideshow textmove">
+        <div class="slideshow-inner">
+            <div class="slides">
+                <div class="slide is-active">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Ballinger<br> Type Specimen</div>
+                            <div class="text">
+                                <p>Typography | Book Design | Web Design</p>
+                            </div>
+                            <a href="project1.html" class="btn">
+                                <span class="btn-inner">View Project</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/project1headerimg.jpg" alt="" class="image" />
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Decoded<br> Event Catalogue</div>
+                            <div class="text">
+                                <p>Typography | Book Design | Package Design</p>
+                            </div>
+                            <a href="project2.html" class="btn">
+                                <span class="btn-inner">View Project</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/project2headerimg.jpg" alt="" class="image" />
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Tully<br>National School</div>
+                            <div class="text">
+                                <p>Identity | Branding | Wayfinding</p>
+                            </div>
+                            <a href="#" class="btn">
+                                <span class="btn-inner">View Project</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/project3headerimg.jpg" alt="" class="image" />
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <div class="arrow prev">
+                    <span class="svg svg-arrow-left">
+                        <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                            <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z" />
+                        </svg>
+                        <span class="alt sr-only"></span>
+                    </span>
+                </div>
+                <div class="arrow next">
+                    <span class="svg svg-arrow-right">
+                        <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                            <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z" />
+                        </svg>
+                        <span class="alt sr-only"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer start -->
+    <br>
+    <div class="container">
+        <hr />
+        <p class="d-none d-sm-block blackiconcolor m-3 txt-railway float-left">© 2020 Robert Tobin</p>
+        <div class="text-center center-block">
+            <a href="https://www.facebook.com/bootsnipp"><i class="blackiconcolor footerhover p-2 fab fa-instagram-square fa-3x social"></i></a>
+            <a href="https://www.linkedin.com/in/robert-tobin-222532178/"><i class="blackiconcolor footerhover p-2 fab fa-linkedin fa-3x social"></i></a>
+            <a href="https://www.behance.net/RobertTobi18f6"><i class="blackiconcolor footerhover p-2 fab fa-behance-square fa-3x social"></i></a>
+            <a href="mailto:robert.tobin@gmx.com" class="d-none d-sm-block blackiconcolor footerhover m-3 txt-railway float-right">Robert.Tobin@gmx.com</a>
+        </div>
+    </div>
+    <br>
+    <!-- Footer end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/TimelineMax.min.js"></script>
+    <script src="js/slide.js"></script>
+    <!-- MyJavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('body').addClass('scrolled');
+            } else {
+                jQuery('body').removeClass('scrolled');
+            }
+        });
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.introheader').addClass('scrolled');
+            } else {
+                jQuery('.introheader').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.introheader2').addClass('scrolled');
+            } else {
+                jQuery('.introheader2').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.btext1').addClass('scrolled');
+            } else {
+                jQuery('.btext1').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.btext2').addClass('scrolled');
+            } else {
+                jQuery('.btext2').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.navbar-toggler').addClass('custom-toggler3');
+            } else {
+                jQuery('.navbar-toggler').removeClass('custom-toggler3');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.navbar').addClass('navbar2');
+            } else {
+                jQuery('.navbar').removeClass('navbar2');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.logonone').removeClass('logoorange');
+            } else {
+                jQuery('.logonone').addClass('logoorange');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.bg-navbar').addClass('scrolled');
+            } else {
+                jQuery('.bg-navbar').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.navlogo').addClass('navlogo2');
+            } else {
+                jQuery('.navlogo').removeClass('navlogo2');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.hamburger').addClass('hamburger2');
+            } else {
+                jQuery('.hamburger').removeClass('hamburger2');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.navbar-toggler-icon').addClass('navbar-toggler-icon2');
+            } else {
+                jQuery('.navbar-toggler-icon').removeClass('navbar-toggler-icon2');
+            }
+        });
+
+        document.getElementById("button").addEventListener("click", function() {
+            var path;
+            if (this.getAttribute("src") === "firefox.ico")
+                path = "chrome.ico";
+            else
+                path = "firefox.ico";
+            this.setAttribute("src", path);
+        });
+
+    </script>
+
+</body>
+
+</html>

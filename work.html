@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- mycss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jkl0xrt.css">
+    <script src="https://kit.fontawesome.com/d7a8f8bccd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/mystyle.css">
+
+    <title>Porfolio</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #EBEBEB;
+            transition: 0.6s ease background-color;
+        }
+
+        .bg-navbar {
+            background: linear-gradient(#EBEBEB 100%, #EBEBEB 100%);
+            z-index: 98;
+        }
+
+        .navlogo:hover {
+            filter: invert(44%) sepia(25%) saturate(4391%) hue-rotate(340deg) brightness(101%) contrast(101%);
+        }
+
+        .hamburger:hover,
+        .hamburger.is-active {
+            filter: invert(44%) sepia(25%) saturate(4391%) hue-rotate(340deg) brightness(101%) contrast(101%);
+            background: rgba(0, 0, 0, 0.0) !important;
+        }
+
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url(images/hbclosed.svg) !important;
+
+        }
+
+        .navbar-toggler-icon:hover {
+            background-image: url(images/hbopen.svg) !important;
+        }
+
+        .navbar-toggler-icon:active {
+            background-image: url(images/hbopen.svg) !important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .bg-navbar {
+                background: linear-gradient(#EBEBEB 100%, #EBEBEB 100%);
+                z-index: 98;
+            }
+
+            .worktextinfo {
+                font-size: 0.90rem;
+            }
+
+            .hovereffect:hover img {
+                filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+                filter: brightness(0.6);
+                -webkit-filter: brightness(0.6);
+                -ms-transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+
+            .hovereffect:hover .overlay {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                transform: translate(0, 0);
+                transition: all 0.7s;
+                border-radius: 5px;
+            }
+        }
+    </style>
+    <a class="navbar-brand logonav sticky-top float-left smart-scroll" href="index.html">
+        <img class="navlogo" src="images/logo.svg" alt="rjt logo">
+    </a>
+    <nav class='navbar navbar-expand-lg bg-navbar smart-scroll sticky-top navbarfont'>
+        <a class='navbar-brand' href='#'></a><button class='navbar-toggler custom-toggler3 hamburger' type='button' data-toggle='collapse' data-target='#navbar-body' aria-controls='navbar-body' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button>
+        <div class='collapse navbar-collapse' id='navbar-body'>
+            <ul class='navbar-nav mr-auto'></ul>
+            <ul class='navbar-nav ml-auto'>
+                <li class='nav-item'><a class='nav-link rmt' href='index.html'>Home</a></li>
+                <li class='nav-item'><a class='nav-link rmt' href='#'>About</a></li>
+                <li class='nav-item'><a class='nav-link rmt' href='work.html'>Work</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container workimagestop">
+        <div class="row">
+            <div class="col-sm-6 order-sm-1 workimages noflow">
+                <div class="hovereffect">
+                    <img class="img-responsive w-100 h-100" src="images/typesquare1.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Ballinger<br> Type Specimen</h2>
+                        <br>
+                        <a href="project1.html" class="btn">
+                            <span class="btn-inner">&nbsp View Project &nbsp</span>
+                        </a>
+                        <br><br><br><br>
+                        <p class="worktextinfo">Typography &nbsp &nbsp|&nbsp &nbsp Book Design &nbsp &nbsp|&nbsp &nbsp Package Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 order-sm-1 workimages noflow">
+                <div class="hovereffect">
+                    <img class="img-responsive w-100 h-100" src="images/coverbcsquare.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Decoded<br> Event Catalogue</h2>
+                        <br>
+                        <a href="project2.html" class="btn">
+                            <span class="btn-inner">&nbsp View Project &nbsp</span>
+                        </a>
+                        <br><br><br><br>
+                        <p class="worktextinfo">Typography &nbsp &nbsp|&nbsp &nbsp Book Design &nbsp &nbsp|&nbsp &nbsp Package Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 order-sm-1 workimages noflow textmove">
+                <div class="hovereffect">
+                    <img class="img-responsive w-100 h-100" src="images/tullysquare.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Tully<br> National School</h2>
+                        <br>
+                        <a href="project1.html" class="btn">
+                            <span class="btn-inner">&nbsp View Project &nbsp</span>
+                        </a>
+                        <br><br><br><br>
+                        <p class="worktextinfo">Typography &nbsp &nbsp|&nbsp &nbsp Book Design &nbsp &nbsp|&nbsp &nbsp Package Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer start -->
+    <br>
+    <div class="container">
+        <hr />
+        <p>© 2020 Robert Tobin</p>
+        <div class="text-center center-block">
+            <a href="https://www.facebook.com/bootsnipp"><i class="blackiconcolor p-2 fab fa-instagram-square fa-3x social"></i></a>
+            <a href="https://www.linkedin.com/in/robert-tobin-222532178/"><i class="blackiconcolor p-2 fab fa-linkedin fa-3x social"></i></a>
+            <a href="https://www.behance.net/RobertTobi18f6"><i class="blackiconcolor p-2 fab fa-behance-square fa-3x social"></i></a>
+            <a href="mailto:robert.tobin@gmx.com" class="d-none d-sm-block blackiconcolor m-3 txt-railway float-right">Robert.Tobin@gmx.com</a>
+        </div>
+    </div>
+    <br>
+    <!-- Footer end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- MyJavaScript -->
+    <script src="js/script.js"></script>
+</body></html>

@@ -1,0 +1,904 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#more {
+    display: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: aileron, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #2B3037;
+    transition: 0.3s ease background-color;
+}
+
+.changeColor {
+    background-color: #EBEBEB;
+    transition: 0.3s ease background-color;
+}
+
+.introheader {
+    display: table;
+    font-family: aileron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 6rem;
+    margin-top: 20%;
+    margin-bottom: -1%;
+    padding-right: 6%;
+    color: #FF5733;
+    background-color: #2B3037;
+    transition: 0.3s ease background-color;
+}
+
+.introheader.scrolled {
+    color: #2B3037;
+    background-color: #EBEBEB;
+    transition: 0.3s ease background-color;
+}
+
+.introheader2 {
+    display: table;
+    font-family: aileron, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3rem;
+    margin-top: -1%;
+    margin-bottom: 50%;
+    text-align: left;
+    line-height: 125%;
+    color: #FF5733;
+    background-color: #2B3037;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    transition: 0.3s ease background-color;
+}
+
+.introheader2.scrolled {
+    color: #2B3037;
+    background-color: #EBEBEB;
+    transition: 0.3s ease background-color;
+}
+
+.btextm1 {
+    margin-top: 20%;
+}
+
+.btextm2 {
+    margin-top: 2%;
+    margin-bottom: 15%;
+}
+
+.btext1 {
+    font-family: aileron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    color: #EBEBEB;
+    background-color: #2B3037;
+    transition: 0.3s ease background-color;
+}
+
+.btext1.scrolled {
+    color: #2B3037;
+    background-color: #EBEBEB;
+    transition: 0.3s ease background-color;
+}
+
+.btext2 {
+    font-family: aileron, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: left;
+    right: 4%;
+    color: #EBEBEB;
+    background-color: #2B3037;
+    transition: 0.3s ease background-color;
+}
+
+.btext2.scrolled {
+    color: #2B3037;
+    background-color: #EBEBEB;
+    transition: 0.3s ease background-color;
+}
+
+.btext2em {
+    left: 0%;
+}
+
+.number1 {
+    font-family: aileron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18rem;
+    text-align: center
+}
+
+.number1mg {
+    margin-top: 50%;
+    float: left;
+}
+
+.vl {
+    border-left: 0.5rem solid black;
+    height: 15rem;
+    margin: 0 auto;
+    width: 0.5rem;
+}
+
+.project1mg {
+    margin-top: 4%;
+}
+
+.project1text {
+    font-family: aileron, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    font-size: 1.5rem;
+}
+
+.project1header {
+    font-family: aileron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4rem;
+    margin-top: -3%;
+}
+
+.project1header2 {
+    font-family: aileron, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3rem;
+    margin-top: -1%;
+    margin-bottom: -1%;
+}
+
+.logonav {
+    margin-top: 0.2%;
+    margin-left: 1%;
+    height: 3.5%;
+    width: 3.5%;
+    z-index: 99;
+}
+
+.navactivecolour {
+    color: white;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,87,51, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler {
+    border-color: #FF5733;
+    border-opacity: 0;
+}
+
+.custom-toggler3 .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(43,48,55, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler3 .navbar-toggler {
+    border-color: #2B3037;
+    border-opacity: 0;
+}
+
+.custom-toggler2 .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,87,51, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler2 .navbar-toggler {
+    border-color: #FF5733;
+}
+
+.navbarfont {
+    font-family: aileron, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.smart-scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.scrolled-down {
+    transform: translateY(-300%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav > li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project1headermg {
+    margin-top: 60%;
+    margin-bottom: 6%;
+}
+
+.project1textrm {
+    font-family: aileron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 150%;
+    font-size: 0.75rem;
+}
+
+.pimage1 {
+    height: 25%;
+    width: 25%;
+    object-fit: cover;
+}
+
+.rmt {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.textmove {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.textmove.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.textmovetime {}
+
+.textmovetime {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.textmovetime.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.noflow {
+    overflow: hidden;
+}
+
+.zoom {
+    transition: transform 1s;
+}
+
+.zoom:hover {
+    transform: scale(2);
+}
+
+.workimagestop {
+    margin-top: 5%;
+}
+
+.workimages {
+    margin-bottom: 5%;
+    z-index: 1;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+    height: 50%;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+
+#cf {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#cf img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+    opacity: 0;
+}
+
+/* project1 */
+.projectinfotext {
+    font-size: 1rem;
+    font-family: aileron, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* index image slide start */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    background: transparent;
+    border: 1px solid #e1e1e1;
+    font: 12px/1.2 "aileron", sans-serif;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-indent: 2px;
+    text-transform: uppercase;
+    transition: color 0.1s linear 0.05s;
+}
+
+.btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e1e1e1;
+    z-index: 1;
+    opacity: 0;
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+
+.btn::after {
+    transition: border 0.1s linear 0.05s;
+}
+
+.btn .btn-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.btn:hover {
+    color: #373737;
+    transition: color 0.1s linear 0s;
+}
+
+.btn:hover::before {
+    top: 0;
+    height: 100%;
+    opacity: 1;
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+
+.btn:hover::after {
+    border-color: #373737;
+    transition: border 0.1s linear 0s;
+}
+
+.slideshow {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.slideshow .slideshow-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow .slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.slideshow .slide {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.slideshow .slide.is-active {
+    display: block;
+}
+
+.slideshow .slide.is-loaded {
+    opacity: 1;
+}
+
+.slideshow .slide .caption {
+    padding: 0 100px;
+}
+
+.slideshow .slide .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    z-index: 1;
+    background-size: cover;
+    image-rendering: optimizeQuality;
+}
+
+.slideshow .slide .image-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slideshow .slide .image {
+    width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.slideshow .slide-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow .slide .title {
+    margin: 0 auto 15px;
+    max-width: 1000px;
+    font-size: 3.5rem;
+    font-family: aileron, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.10em;
+}
+
+.slideshow .slide .text {
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size: 18px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-family: aileron, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.slideshow .slide .btn {
+    margin: 15px 0 0;
+    border-color: #fff;
+}
+
+.slideshow .slide .btn::before {
+    background: #fff;
+}
+
+.slideshow .pagination {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    cursor: default;
+    z-index: 2;
+    text-align: center;
+}
+
+.slideshow .pagination .item {
+    display: inline-block;
+    padding: 15px 5px;
+    position: relative;
+    width: 46px;
+    height: 32px;
+    cursor: pointer;
+    text-indent: -999em;
+    z-index: 1;
+}
+
+.slideshow .pagination .item + .page {
+    margin-left: -2px;
+}
+
+.slideshow .pagination .item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 36px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: background 0.2s ease;
+}
+
+.slideshow .pagination .item::after {
+    width: 0;
+    background: #fff;
+    z-index: 2;
+    transition: width 0.2s ease;
+}
+
+.slideshow .pagination .item:hover::before,
+.slideshow .pagination .item.is-active::before {
+    background-color: #fff;
+}
+
+.slideshow .arrows .arrow {
+    margin: -33px 0 0;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.slideshow .arrows .prev {
+    left: 30px;
+}
+
+.slideshow .arrows .prev:hover .svg {
+    left: -10px;
+    filter: invert(47%) sepia(42%) saturate(3130%) hue-rotate(337deg) brightness(97%) contrast(108%);
+}
+
+.slideshow .arrows .next {
+    right: 30px;
+}
+
+.slideshow .arrows .next:hover .svg {
+    left: 10px;
+    filter: invert(47%) sepia(42%) saturate(3130%) hue-rotate(337deg) brightness(97%) contrast(108%);
+}
+
+.slideshow .arrows .svg {
+    position: relative;
+    left: 0;
+    width: 14px;
+    height: 26px;
+    fill: #fff;
+    transition: left 0.2s ease;
+}
+
+/* image slide end */
+
+/* navbar start*/
+.logonone {}
+
+.logoorange {
+    filter: invert(58%) sepia(49%) saturate(6593%) hue-rotate(339deg) brightness(100%) contrast(102%);
+}
+
+.logodark {
+    filter: invert(11%) sepia(4%) saturate(3685%) hue-rotate(176deg) brightness(99%) contrast(80%);
+}
+
+.navbar a {
+    color: #2B3037;
+}
+
+.navbar a:hover {
+    color: #FF5733;
+}
+
+.navbar2 a {
+    color: #2B3037;
+}
+
+.navbar2 a:hover {
+    color: #ffffff;
+}
+
+/* navbar end*/
+
+/* work page */
+
+.worktextinfo {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    font-family: aileron, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    border-radius: 5px;
+}
+
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+    border-radius: 5px;
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: translate(0, 0);
+    transition: all 0.7s;
+    border-radius: 5px;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+    border-radius: 5px;
+}
+
+.hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.hovereffect h2 {
+    text-align: center;
+    position: relative;
+    font-size: 2.4rem;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.hovereffect a,
+.hovereffect p {
+    color: #FFF;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p,
+.hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* footer */
+
+.blackiconcolor {
+    color: #2B3037;
+}
+
+.footerhover:hover {
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+    color: #FF5733;
+}
+
+.nav-link {
+    color: #FF5733;
+}
+
+.fontorange {
+    color: #FF5733;
+}
+
+.uparrow {
+    height: 24%;
+    width: 24%;
+}
+
+.uparrow2 {
+    height: 8%;
+    width: 8%;
+}
+
+#more {display: none;}
+
+@media only screen and (max-width: 600px) {
+
+    .slideshow .slide .title {
+        margin: 0 auto 15px;
+        max-width: 500px;
+        font: 700 2rem/1.5 "aileron", sans-serif;
+        letter-spacing: 0.1em;
+    }
+
+    .slideshow .slide .text {
+        margin: 0 auto;
+        max-width: 1000px;
+        font-size: 12px;
+        line-height: 1.4;
+        text-transform: uppercase;
+        font-family: aileron, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .slideimg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .introheader {
+        font-size: 3rem;
+        margin-top: 60%;
+    }
+
+    .introheader2 {
+        font-size: 1.5rem;
+        margin-bottom: 100%;
+    }
+
+    .btext1 {
+        font-size: 1.5rem;
+    }
+
+    .btext2 {
+        font-size: 1.5rem;
+    }
+
+    .project1text {
+        font-size: 1rem;
+    }
+
+    .project1header {
+        font-size: 1.5rem;
+        margin-bottom: 3%;
+    }
+
+    .project1header2 {
+        font-size: 1.5rem;
+    }
+
+    .vl {
+        border-left: 0.25rem solid black;
+        display: block;
+        height: 7rem;
+        width: 0.25rem;
+    }
+
+    .number1 {
+        font-size: 9rem;
+    }
+
+    .logonav {
+        top: 0.5%;
+        left: 2%;
+        height: 7%;
+        width: 7%;
+        z-index: 99;
+    }
+
+    .navbar-nav > li {
+        padding-left: 0px;
+    }
+
+    .navbarfont {
+        font-size: 1rem;
+    }
+
+}
+
+/* medium - display 2  */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+}
+
+/* large - display 3 */
+@media (min-width: 992px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33%);
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
