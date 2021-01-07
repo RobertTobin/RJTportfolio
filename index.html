@@ -139,26 +139,49 @@
         transition: border 0.1s linear 0s;
     }
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 768px) {
 
         body {
             background-position: 100% 8%;
-            -webkit-background-size: 80%;
-            -moz-background-size: 80%;
-            -o-background-size: 80%;
-            background-size: 80%;
+            -webkit-background-size: 95%;
+            -moz-background-size: 95%;
+            -o-background-size: 95%;
+            background-size: 95%;
         }
 
-        .btext1 {
-            font-size: 1.4rem;
-        }
-
-        .btext2 {
-            font-size: 1.25rem;
+        .introheader {
+            font-size: 6vh;
+            margin-top: 60%;
         }
 
         .introheader2 {
-            margin-bottom: 53%;
+            font-size: 3vh;
+            margin-bottom: 100%;
+        }
+
+        .btext1 {
+            font-size: 2vh;
+        }
+
+        .btext2 {
+            font-size: 2vh;
+        }
+
+        .slideshow .slide .title {
+            font-size: 4vh;
+        }
+
+        .slideshow .slide .text {
+            font-size: 1.1vh;
+        }
+
+        .slideshow .slide .image-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slideshow {
+            height: 50vh;
         }
     }
 
@@ -183,7 +206,7 @@
     <div class="container d-none d-sm-block">
         <div class="row">
             <div class="col-md-12">
-                <p class="introheader">Hi! 3'm Robert.</p>
+                <p class="introheader">Hi! I'm Robert.</p>
             </div>
         </div>
         <div class="row">
@@ -198,7 +221,7 @@
             <div class="col-1">
             </div>
             <div class="col-11">
-                <p class="introheader">Hi! 3'm Robert.</p>
+                <p class="introheader">Hi! I'm Robert.</p>
             </div>
         </div>
         <div class="row">
@@ -232,7 +255,7 @@
             <div class="col-1">
             </div>
             <div class="col-10 btext1">
-                <p>I'm a design student currently<br> on my 3rd year studying Visual Communication Design<br> at the Institute of Art, Design + Technology, Dún Laoghaire. <br>I have a wide range of interests ranging from print to screen design.
+                <p>I'm a design student currently on my 3rd year studying Visual Communication Design at the Institute of Art, Design + Technology, Dún Laoghaire. I have a wide range of interests ranging from print to screen design.
                 </p>
             </div>
         </div>
@@ -243,7 +266,7 @@
                 <p>—</p>
             </div>
             <div class="col-9">
-                <p>I’m always looking for opportunities<br> to gain experience, If you like my <br>work, or you are looking for a designer<br> who is passionate about design, please drop me a <span class="linecontact">line</span>.</p>
+                <p>I’m always looking for opportunities to gain experience, If you like my work, or you are looking for a designer who is passionate about design, please drop me a <span class="linecontact">line</span>.</p>
             </div>
         </div>
     </div>
@@ -263,8 +286,13 @@
                             </a>
                         </div>
                     </div>
-                    <div class="image-container">
+                    <!-- large screen -->
+                    <div class="image-container d-none d-sm-block">
                         <img src="images/project1headerimg.jpg" alt="" class="image" />
+                    </div>
+                    <!-- small screen -->
+                    <div class="image-container d-block d-sm-none">
+                        <img src="images/typesquare1.jpg" alt="" class="image" />
                     </div>
                 </div>
                 <div class="slide">
@@ -473,6 +501,9 @@
                 path = "firefox.ico";
             this.setAttribute("src", path);
         });
+
     </script>
 
-</body></html>
+</body>
+
+</html>

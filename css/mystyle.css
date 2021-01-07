@@ -769,7 +769,7 @@ body {
 
 #more {display: none;}
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
 
     .slideshow .slide .title {
         margin: 0 auto 15px;
@@ -792,24 +792,6 @@ body {
     .slideimg {
         width: 100%;
         height: 100%;
-    }
-
-    .introheader {
-        font-size: 3rem;
-        margin-top: 60%;
-    }
-
-    .introheader2 {
-        font-size: 1.5rem;
-        margin-bottom: 100%;
-    }
-
-    .btext1 {
-        font-size: 1.5rem;
-    }
-
-    .btext2 {
-        font-size: 1.5rem;
     }
 
     .project1text {

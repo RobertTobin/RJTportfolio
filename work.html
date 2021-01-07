@@ -60,14 +60,22 @@
             background-image: url(images/hbopen.svg) !important;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 768px) {
             .bg-navbar {
                 background: linear-gradient(#EBEBEB 100%, #EBEBEB 100%);
                 z-index: 98;
             }
 
             .worktextinfo {
-                font-size: 0.90rem;
+                font-size: 1vh;
+            }
+
+            .btn {
+                font-size: 2vh;
+            }
+
+            .hovereffect h2 {
+                font-size: 5vh;
             }
 
             .hovereffect:hover img {
@@ -87,6 +95,7 @@
                 border-radius: 5px;
             }
         }
+
     </style>
     <a class="navbar-brand logonav sticky-top float-left smart-scroll" href="index.html">
         <img class="navlogo" src="images/logo.svg" alt="rjt logo">
@@ -171,4 +180,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- MyJavaScript -->
     <script src="js/script.js"></script>
-</body></html>
+</body>
+
+</html>
