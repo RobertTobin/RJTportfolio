@@ -767,7 +767,9 @@ body {
     width: 8%;
 }
 
-#more {display: none;}
+#more {
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
 
