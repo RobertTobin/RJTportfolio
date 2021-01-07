@@ -172,7 +172,7 @@
         }
 
         .slideshow .slide .text {
-            font-size: 1.1vh;
+            font-size: 1.5vh;
         }
 
         .slideshow .slide .image-container {
@@ -183,8 +183,16 @@
         .slideshow {
             height: 50vh;
         }
-    }
 
+        .slideshow .arrows .arrow {
+            margin: -15px 0 0;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            z-index: 3;
+        }
+    }
 </style>
 
 <body>
@@ -278,7 +286,7 @@
                     <div class="slide-content">
                         <div class="caption">
                             <div class="title">Ballinger Type Specimen</div>
-                            <div class="text">
+                            <div class="text d-none d-sm-block">
                                 <p>Typography | Book Design | Web Design</p>
                             </div>
                             <a href="project1.html" class="btn">
@@ -294,7 +302,7 @@
                     <div class="slide-content">
                         <div class="caption">
                             <div class="title">Decoded Event Catalogue</div>
-                            <div class="text">
+                            <div class="text d-none d-sm-block">
                                 <p>Typography | Book Design | Package Design</p>
                             </div>
                             <a href="project2.html" class="btn">
@@ -310,7 +318,7 @@
                     <div class="slide-content">
                         <div class="caption">
                             <div class="title">Tully National School</div>
-                            <div class="text">
+                            <div class="text d-none d-sm-block">
                                 <p>Identity | Branding | Wayfinding</p>
                             </div>
                             <a href="#" class="btn">
@@ -496,9 +504,6 @@
                 path = "firefox.ico";
             this.setAttribute("src", path);
         });
-
     </script>
 
-</body>
-
-</html>
+</body></html>

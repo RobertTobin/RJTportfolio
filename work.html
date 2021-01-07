@@ -66,8 +66,18 @@
                 z-index: 98;
             }
 
+            .hovereffect .overlay {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                transform: translate(0, 0vh);
+            }
+
+            .hovereffect img {
+                filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+            }
+
             .worktextinfo {
-                font-size: 1vh;
+                font-size: 1.5vh;
             }
 
             .btn {
@@ -75,7 +85,12 @@
             }
 
             .hovereffect h2 {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                transform: translate(0, 0);
                 font-size: 5vh;
+                padding: 0.1em 0;
+                padding-top: 1em;
             }
 
             .hovereffect:hover img {
@@ -93,6 +108,18 @@
                 transform: translate(0, 0);
                 transition: all 0.7s;
                 border-radius: 5px;
+            }
+
+            .hovereffect a,
+            .hovereffect p {
+                color: #FFF;
+                padding: 1em 0;
+                opacity: 1;
+                filter: alpha(opacity=100);
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
             }
         }
 
