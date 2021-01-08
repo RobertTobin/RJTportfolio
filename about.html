@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- mycss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jkl0xrt.css">
+    <script src="https://kit.fontawesome.com/d7a8f8bccd.js" crossorigin="anonymous"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="css/mystyle.css">
+
+
+    <title>Porfolio</title>
+</head>
+<style>
+    body {
+        background-repeat: no-repeat;
+
+        background-position: 100% 10%;
+        -webkit-background-size: 60%;
+        -moz-background-size: 60%;
+        -o-background-size: 60%;
+        background-size: 60%;
+    }
+
+    body {
+        background-image: url(images/bgbcutX.svg);
+        transition: 0.3s ease background-image;
+        background-color: #2B3037;
+        transition: 0.3s ease background-color;
+    }
+
+    .navbar a {
+        color: #FF5733;
+    }
+
+    .navbar a:hover {
+        color: #ffffff;
+    }
+
+    .navbar2 a {
+        color: #2B3037;
+    }
+
+    .active,
+    .navbar2 a:hover {
+        color: #FF5733;
+    }
+
+    .bg-navbar {
+        background: linear-gradient(#2B3037 100%, #2B3037 100%);
+        z-index: 98;
+    }
+
+    .bg-navbar.scrolled {
+        background: linear-gradient(#EBEBEB 100%, #EBEBEB 100%);
+        z-index: 98;
+    }
+
+    .navlogo:hover {
+        filter: invert(100%) sepia(14%) saturate(1%) hue-rotate(77deg) brightness(300%) contrast(200%);
+    }
+
+    .navlogo2:hover {
+        filter: invert(44%) sepia(61%) saturate(2510%) hue-rotate(339deg) brightness(99%) contrast(104%);
+    }
+
+    .hamburger:hover,
+    .hamburger.is-active {
+        filter: invert(100%) sepia(14%) saturate(1%) hue-rotate(77deg) brightness(300%) contrast(200%);
+        background: rgba(0, 0, 0, 0.0) !important;
+    }
+
+    .hamburger2:hover,
+    .hamburger2.is-active {
+        filter: invert(44%) sepia(61%) saturate(2510%) hue-rotate(339deg) brightness(99%) contrast(104%);
+        background: rgba(0, 0, 0, 0.0) !important;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler-icon:hover {
+        background-image: url(images/hbopen.svg) !important;
+        transition: all 0.1s linear 0s;
+    }
+
+    .navbar-toggler-icon:active {
+        background-image: url(images/hbopen.svg) !important;
+        transition: all 0.1s linear 0s;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url(images/hbclosed.svg) !important;
+        filter: invert(44%) sepia(61%) saturate(2510%) hue-rotate(339deg) brightness(99%) contrast(104%);
+        transition: all 0.1s linear 0s;
+    }
+
+    .navbar-toggler-icon2 {
+        background-image: url(images/hbclosed.svg) !important;
+        filter: invert(100%) sepia(14%) saturate(1%) hue-rotate(77deg) brightness(0%) contrast(200%);
+        transition: all 0.1s linear 0s;
+
+    }
+
+    #navbar-close {
+        color: #888;
+        width: 22px;
+        height: 14px;
+    }
+
+    .nav-item:hover::before {
+        transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+    }
+
+    .nav-item:hover::after {
+        transition: border 0.1s linear 0s;
+    }
+
+    .footercontact {
+        border-bottom: 1.5px solid #EBEBEB;
+        padding: 0 0 0px;
+        color: #EBEBEB;
+    }
+
+    .footercontact:hover {
+        border-color: #FF5733;
+        color: #FF5733;
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        body {
+            background-position: 100% 8%;
+            -webkit-background-size: 95%;
+            -moz-background-size: 95%;
+            -o-background-size: 95%;
+            background-size: 95%;
+        }
+    }
+
+</style>
+
+<body>
+    <a class="navbar-brand logonav order-2 sticky-top float-left smart-scroll" href="index.html">
+        <img class="logoorange logonone navlogo" src="images/logo.svg" alt="rjt logo">
+    </a>
+    <nav class='navbar navbar-expand-lg bg-navbar smart-scroll sticky-top navbarfont'>
+        <a class='navbar-brand' href='#'></a><button class='navbar-toggler fancy-toggler custom-toggler hamburger' type='button' data-toggle='collapse' data-target='#navbar-body' aria-controls='navbar-body' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button>
+        <div class='collapse navbar-collapse' id='navbar-body'>
+            <ul class='navbar-nav mr-auto'></ul>
+            <ul class='navbar-nav ml-auto'>
+                <li class='nav-item activepage'><a class='nav-link rmt ' href='index.html'>Home</a></li>
+                <li class='nav-item'><a class='nav-link rmt' href='index.html'>About</a></li>
+                <li class='nav-item'><a class='nav-link rmt' href='work.html'>Work</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- about main -->
+    <!-- large screen -->
+    <div class="container project1headermg d-none d-sm-block">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="project1header">Type Specimen</p>
+                <p class="project1header2">— Design Practices:<br>&nbsp &nbsp &nbsp Print & Screen</p>
+            </div>
+            <div class="col-md-6 project1text textmove">
+                <p>The aim of this project was to create a booklet and accompanying website for the promotion and sale of the typeface Ballinger. The core considerations was developing a core typographic system and using this in this in the application of print and screen UX/UI designs.</p>
+                <p>The main design mentality for this project was to create a clear and functional layout to best show the merits and use cases for the Ballinger typeface this philosophy informed all my design decisions at all stages of the project. Minimal decorative elements were used in the layout so as not to distract from the main emphasis of the font itself.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 project1text textmove">
+                <p class="projectinfotext">—&nbsp &nbsp &nbsp Typography &nbsp &nbsp &nbsp Book Design &nbsp &nbsp &nbsp Web Design</p>
+            </div>
+        </div>
+    </div>
+    <!-- small screen -->
+    <div class="container project1headermg d-block d-sm-none">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <p class="project1header">Type Specimen</p>
+                <p class="project1header2">— Design Practices:<br> &nbsp &nbsp &nbsp Print & Screen</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10 project1text">
+                <p>The aim of this project was to create a booklet and accompanying website for the promotion and sale of the typeface Ballinger. The core considerations was developing a core typographic system and using this in this in the application of print and screen UX/UI designs.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10 project1text">
+                <p>The main design mentality for this project was to create a clear and functional layout to best show the merits and use cases for the Ballinger typeface this philosophy informed all my design decisions at all stages of the project. Minimal decorative elements were used in the layout so as not to distract from the main emphasis of the font itself.</p>
+            </div>
+        </div>
+        <br>
+        <div class="row sscmg">
+            <div class="col-1"></div>
+            <div class="col-10 project1text textmove">
+                <p class="projectinfotext">—&nbsp &nbsp Typography&nbsp &nbsp Book Design&nbsp &nbsp Web Design</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer start -->
+    <br>
+    <div class="container">
+        <hr />
+        <p class="d-none d-sm-block whiteiconcolor m-3 txt-railway float-left">© 2020 Robert Tobin</p>
+        <div class="text-center center-block">
+            <a href="https://www.facebook.com/bootsnipp"><i class="whiteiconcolor footerhover p-2 fab fa-instagram-square fa-3x social"></i></a>
+            <a href="https://www.linkedin.com/in/robert-tobin-222532178/"><i class="whiteiconcolor footerhover p-2 fab fa-linkedin fa-3x social"></i></a>
+            <a href="https://www.behance.net/RobertTobi18f6"><i class="whiteiconcolor footerhover p-2 fab fa-behance-square fa-3x social"></i></a>
+            <a href="mailto:robert.tobin@gmx.com" class="d-none d-sm-block whiteiconcolor footercontact m-3 txt-railway float-right">Robert.Tobin@gmx.com</a>
+        </div>
+    </div>
+    <br>
+    <!-- Footer end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- MyJavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('body').addClass('scrolled');
+            } else {
+                jQuery('body').removeClass('scrolled');
+            }
+        });
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.introheader').addClass('scrolled');
+            } else {
+                jQuery('.introheader').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.introheader2').addClass('scrolled');
+            } else {
+                jQuery('.introheader2').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.btext1').addClass('scrolled');
+            } else {
+                jQuery('.btext1').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.btext2').addClass('scrolled');
+            } else {
+                jQuery('.btext2').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.navbar-toggler').addClass('custom-toggler3');
+            } else {
+                jQuery('.navbar-toggler').removeClass('custom-toggler3');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.navbar').addClass('navbar2');
+            } else {
+                jQuery('.navbar').removeClass('navbar2');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.logonone').removeClass('logoorange');
+            } else {
+                jQuery('.logonone').addClass('logoorange');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.bg-navbar').addClass('scrolled');
+            } else {
+                jQuery('.bg-navbar').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.navlogo').addClass('navlogo2');
+            } else {
+                jQuery('.navlogo').removeClass('navlogo2');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.hamburger').addClass('hamburger2');
+            } else {
+                jQuery('.hamburger').removeClass('hamburger2');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.navbar-toggler-icon').addClass('navbar-toggler-icon2');
+            } else {
+                jQuery('.navbar-toggler-icon').removeClass('navbar-toggler-icon2');
+            }
+        });
+
+        document.getElementById("button").addEventListener("click", function() {
+            var path;
+            if (this.getAttribute("src") === "firefox.ico")
+                path = "chrome.ico";
+            else
+                path = "firefox.ico";
+            this.setAttribute("src", path);
+        });
+
+        $('.slideshow').on('touchstart', function(event) {
+            const xClick = event.originalEvent.touches[0].pageX;
+            $(this).one('touchmove', function(event) {
+                const xMove = event.originalEvent.touches[0].pageX;
+                const sensitivityInPx = 5;
+
+                if (Math.floor(xClick - xMove) > sensitivityInPx) {
+                    $(this).arrows('next');
+                } else if (Math.floor(xClick - xMove) < -sensitivityInPx) {
+                    $(this).arrows('prev');
+                }
+            });
+            $(this).on('touchend', function() {
+                $(this).off('touchmove');
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

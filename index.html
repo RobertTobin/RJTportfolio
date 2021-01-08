@@ -23,11 +23,11 @@
     body {
         background-repeat: no-repeat;
 
-        background-position: 100% 10%;
-        -webkit-background-size: 60%;
-        -moz-background-size: 60%;
-        -o-background-size: 60%;
-        background-size: 60%;
+        background-position: 100% 5%;
+        -webkit-background-size: 66%;
+        -moz-background-size: 66%;
+        -o-background-size: 66%;
+        background-size: 66%;
     }
 
     body {
@@ -147,9 +147,45 @@
         transition: border 0.1s linear 0s;
     }
 
-    .activepage {
-        text-decoration-line: underline;
-        text-decoration-thickness: 1em;
+    .mouse {
+        max-width: $mouse-width;
+        width: 10%;
+        height: auto;
+    }
+
+    .mousescrollvanish {
+        opacity: 0;
+        transition: all 0.5s linear 0s;
+    }
+
+    .scroll {
+        animation-name: scroll;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+        animation-iteration-count: infinite;
+        transform-origin: 50% 20.5px;
+        will-change: transform, opacity;
+        opacity: 1;
+    }
+
+    .scroll-link {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+    }
+
+    @keyframes scroll {
+
+        0%,
+        20% {
+            transform: translateY(0) scaleY(1);
+        }
+
+        100% {
+            transform: translateY(36px) scaleY(2);
+            opacity: 0;
+        }
+
     }
 
     @media only screen and (max-width: 768px) {
@@ -160,6 +196,30 @@
             -moz-background-size: 95%;
             -o-background-size: 95%;
             background-size: 95%;
+        }
+
+        .scroll {
+            animation-name: scroll;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+            animation-iteration-count: infinite;
+            transform-origin: 50% 20.5px;
+            will-change: transform, opacity;
+            opacity: 1;
+        }
+
+        @keyframes scroll {
+
+            0%,
+            20% {
+                transform: translateY(0) scaleY(1);
+            }
+
+            100% {
+                transform: translateY(105px) scaleY(2);
+                opacity: 0;
+            }
+
         }
 
         .linecontact {
@@ -225,7 +285,7 @@
             <ul class='navbar-nav mr-auto'></ul>
             <ul class='navbar-nav ml-auto'>
                 <li class='nav-item activepage'><a class='nav-link rmt ' href='index.html'>Home</a></li>
-                <li class='nav-item'><a class='nav-link rmt' href='index.html'>About</a></li>
+                <li class='nav-item'><a class='nav-link rmt' href='about.html'>About</a></li>
                 <li class='nav-item'><a class='nav-link rmt' href='work.html'>Work</a></li>
             </ul>
         </div>
@@ -259,6 +319,27 @@
                 <p class="introheader2">— I'm a designer currently<br>&nbsp &nbsp &nbsp living and learning in Dublin.</p>
             </div>
         </div>
+    </div>
+    <!-- mouse large screen-->
+    <div class="row  d-none d-sm-block">
+        <a class="scroll-link">
+            <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+                <g fill="none" fill-rule="evenodd">
+                    <rect width="70" height="118" x="1.5" y="1.5" stroke="#FF5733" stroke-width="5" rx="36" />
+                    <circle class="scroll" cx="36.5" cy="31.5" r="5" fill="#FF5733" />
+                </g>
+            </svg>
+        </a>
+    </div>
+    <!-- mouse small screen-->
+    <div class="row d-block d-sm-none">
+        <a class="scroll-link">
+            <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+                <g fill="none" fill-rule="evenodd">
+                    <circle class="scroll" cx="36.5" cy="31.5" r="15" fill="#FF5733" />
+                </g>
+            </svg>
+        </a>
     </div>
     <!-- large screen -->
     <div class="container btextm1 d-none d-sm-block">
@@ -503,6 +584,16 @@
                 jQuery('.hamburger').addClass('hamburger2');
             } else {
                 jQuery('.hamburger').removeClass('hamburger2');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 1; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
+                jQuery('.mouse').addClass('mousescrollvanish');
+            } else {
+                jQuery('.mouse').removeClass('mousescrollvanish');
             }
         });
 
