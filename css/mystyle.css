@@ -745,11 +745,6 @@ body {
     color: #2B3037;
 }
 
-.footerhover:hover {
-    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
-    color: #FF5733;
-}
-
 .nav-link {
     color: #FF5733;
 }
@@ -770,6 +765,24 @@ body {
 
 #more {
     display: none;
+}
+
+.footercontact {
+    border-bottom: 1.5px solid #2B3037;
+    padding: 0 0 0px;
+    color: #2B3037;
+}
+
+.footercontact:hover {
+    border-color: #FF5733;
+    color: #FF5733;
+    text-decoration: none;
+}
+
+
+.footerhover:hover {
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+    color: #FF5733;
 }
 
 @media only screen and (max-width: 768px) {
