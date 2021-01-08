@@ -52,6 +52,28 @@ body {
     font-style: normal;
     font-size: 3rem;
     margin-top: -1%;
+    padding-bottom: 3%;
+        padding-right: 15%;
+    text-align: left;
+    line-height: 125%;
+    color: #FF5733;
+    background-color: #2B3037;
+    transition: 0.3s ease background-color;
+}
+
+.introheader2.scrolled {
+    color: #2B3037;
+    background-color: #EBEBEB;
+    transition: 0.3s ease background-color;
+}
+
+.introheader3 {
+    display: table;
+    font-family: aileron, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3rem;
+    margin-top: -5%;
     margin-bottom: 50%;
     text-align: left;
     line-height: 125%;
@@ -62,10 +84,14 @@ body {
     transition: 0.3s ease background-color;
 }
 
-.introheader2.scrolled {
+.introheader3.scrolled {
     color: #2B3037;
     background-color: #EBEBEB;
     transition: 0.3s ease background-color;
+}
+
+.introbackground {
+    background-color: #2B3037;
 }
 
 .btextm1 {
