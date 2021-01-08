@@ -521,6 +521,16 @@
             var fromTopPx = 300; // distance to trigger
             var scrolledFromtop = jQuery(window).scrollTop();
             if (scrolledFromtop > fromTopPx) {
+                jQuery('.introheader3').addClass('scrolled');
+            } else {
+                jQuery('.introheader3').removeClass('scrolled');
+            }
+        });
+
+        jQuery(window).scroll(function() {
+            var fromTopPx = 300; // distance to trigger
+            var scrolledFromtop = jQuery(window).scrollTop();
+            if (scrolledFromtop > fromTopPx) {
                 jQuery('.btext1').addClass('scrolled');
             } else {
                 jQuery('.btext1').removeClass('scrolled');
