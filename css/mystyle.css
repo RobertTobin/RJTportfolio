@@ -866,6 +866,9 @@ body {
 
 @media only screen and (max-width: 768px) {
 
+    .scrollToTopBtn {
+        width: 36px;
+    }
     .slideshow .slide .title {
         margin: 0 auto 15px;
         max-width: 500px;
