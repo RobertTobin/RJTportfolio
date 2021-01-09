@@ -49,6 +49,16 @@ if ($('.smart-scroll').length > 0) { // check if element exists
 
 $(".img-fluid").addClass("wow fadeIn z-depth-1-half");
 
+jQuery(window).scroll(function () {
+    var fromTopPx = 1; // distance to trigger
+    var scrolledFromtop = jQuery(window).scrollTop();
+    if (scrolledFromtop > fromTopPx) {
+        jQuery('.mouse').addClass('mousescrollvanish');
+    } else {
+        jQuery('.mouse').removeClass('mousescrollvanish');
+    }
+});
+
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
 var rootElement = document.documentElement
 
