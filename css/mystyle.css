@@ -815,6 +815,55 @@ body {
     color: #FF5733;
 }
 
+    .scrollToTopBtn {
+        font-size: 16px;
+        line-height: 48px;
+        width: 48px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.0);
+
+        /* place it at the bottom right corner */
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        /* keep it at the top of everything else */
+        z-index: 100;
+        /* hide with opacity */
+        opacity: 0;
+        /* also add a translate effect */
+        transform: translateY(100px);
+        /* and a transition */
+        transition: all .5s ease
+    }
+
+    .showBtn {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    .toTopBtn {
+        border: none;
+        outline: none;
+    }
+
+    .toTopBtn:active {
+        filter: invert(44%) sepia(61%) saturate(2510%) hue-rotate(339deg) brightness(99%) contrast(104%);
+        border: none;
+        outline: none;
+    }
+
+    .toTopBtn:hover {
+        cursor: pointer;
+        filter: invert(44%) sepia(61%) saturate(2510%) hue-rotate(339deg) brightness(99%) contrast(104%);
+        border: none;
+        outline: none;
+    }
+
+    .toTopBtn:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
 @media only screen and (max-width: 768px) {
 
     .slideshow .slide .title {
