@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes user-scalable=no">
     <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Bootstrap CSS -->
@@ -128,18 +128,6 @@
         height: 14px;
     }
 
-    .linecontact {
-        border-bottom: 1.5px solid #2B3037;
-        padding: 0 0 0px;
-        color: #2B3037;
-    }
-
-    .linecontact:hover {
-        border-color: #FF5733;
-        color: #FF5733;
-        text-decoration: none;
-    }
-
     .nav-item:hover::before {
         transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
     }
@@ -188,6 +176,10 @@
             font-size: 2.4vh;
         }
 
+        .selectedwork {
+            font-size: 5vw;
+        }
+
         .slideshow .slide .title {
             font-size: 4vh;
         }
@@ -226,7 +218,7 @@
         <div class='collapse navbar-collapse' id='navbar-body'>
             <ul class='navbar-nav mr-auto'></ul>
             <ul class='navbar-nav ml-auto'>
-                <li class='nav-item activepage'><a class='nav-link rmt ' href='index.html'>Home</a></li>
+                <li class='nav-item activepage'><a class='nav-link rmt' href='index.html'>Home</a></li>
                 <li class='nav-item'><a class='nav-link rmt' href='about.html'>About</a></li>
                 <li class='nav-item'><a class='nav-link rmt' href='work.html'>Work</a></li>
             </ul>
@@ -326,6 +318,11 @@
         </div>
     </div>
     <!-- image slide -->
+    <div class="container-fluid selectedwork textmove float-right  d-none d-sm-block">
+            <div>
+                <p>— Selected Work</p>
+            </div>
+    </div>
     <section class="slideshow textmove">
         <div class="slideshow-inner">
             <div class="slides">
@@ -400,7 +397,7 @@
     </section>
     <!-- Footer start -->
     <br>
-    <div class="container">
+    <div class="container footerpad">
         <hr />
         <p class="d-none d-sm-block blackiconcolor m-3 txt-railway float-left">© 2020 Robert Tobin</p>
         <div class="text-center center-block">
@@ -411,7 +408,6 @@
         </div>
         <a class="scrollToTopBtn"><img class="toTopBtn" src="images/angle-circle-arrow-up.svg" alt="back to top"></a>
     </div>
-    <br>
     <!-- Footer end -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

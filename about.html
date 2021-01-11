@@ -22,16 +22,12 @@
 <style>
     body {
         background-repeat: no-repeat;
-
-        background-position: 100% 10%;
-        -webkit-background-size: 60%;
-        -moz-background-size: 60%;
-        -o-background-size: 60%;
-        background-size: 60%;
+        background-size:cover;
+        background-image: url(images/bgaboutor-01.svg);
+        background-position: 100% -20%;
     }
 
     body {
-        background-image: url(images/bgbcutX.svg);
         transition: 0.3s ease background-image;
         background-color: #2B3037;
         transition: 0.3s ease background-color;
@@ -140,14 +136,72 @@
         text-decoration: none;
     }
 
+    .project1headermg {
+        margin-top: 10%;
+        margin-bottom: 6%;
+    }
+
+    hr {
+        height: 1px;
+        background-color: #EBEBEB;
+        border: none;
+    }
+
+    .project1header {
+        color: #EBEBEB;
+        margin-top: 0%;
+        margin-bottom: -3%;
+    }
+
+    .project1header2 {
+        color: #EBEBEB;
+    }
+
+    .project1text {
+        color: #EBEBEB;
+    }
+
+    .project1header {
+        color: #EBEBEB;
+    }
+
+    .linecontact2 {
+        text-decoration: none;
+        padding: 0 0 0px;
+        color: #EBEBEB;
+    }
+
+    .linecontact2:hover {
+        color: #FF5733;
+        text-decoration: none;
+    }
+
+    .darkbackground {
+        background-color: #2B3037;
+        padding: 1%;
+    }
+
+    .darkbackgroundfooter {
+        background-color: #2B3037;
+        padding-top: -50%;
+        padding-left: -10%;
+        padding-right: -20%;
+    }
+
     @media only screen and (max-width: 768px) {
 
         body {
-            background-position: 100% 8%;
-            -webkit-background-size: 95%;
-            -moz-background-size: 95%;
-            -o-background-size: 95%;
-            background-size: 95%;
+            background-position: 50% 0%;
+            background-size:cover;
+        }
+
+        .project1header {
+            font-size: 3rem;
+            margin-bottom: 3%;
+        }
+
+        .project1header2 {
+            font-size: 2rem;
         }
     }
 
@@ -170,21 +224,29 @@
     </nav>
     <!-- about main -->
     <!-- large screen -->
-    <div class="container project1headermg d-none d-sm-block">
+    <div class="container project1headermg d-none d-sm-block ">
         <div class="row">
-            <div class="col-md-6">
-                <p class="project1header">Type Specimen</p>
-                <p class="project1header2">— Design Practices:<br>&nbsp &nbsp &nbsp Print & Screen</p>
+            <div class="col-md-5">
+                <p class="project1header">Robert Tobin</p>
+                <p class="project1header2">— Creative</p>
+                <p class="project1header2">— Innovative</p>
+                <p class="project1header2">— Flexible</p>
             </div>
-            <div class="col-md-6 project1text textmove">
-                <p>The aim of this project was to create a booklet and accompanying website for the promotion and sale of the typeface Ballinger. The core considerations was developing a core typographic system and using this in this in the application of print and screen UX/UI designs.</p>
-                <p>The main design mentality for this project was to create a clear and functional layout to best show the merits and use cases for the Ballinger typeface this philosophy informed all my design decisions at all stages of the project. Minimal decorative elements were used in the layout so as not to distract from the main emphasis of the font itself.</p>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 project1text darkbackground">
+                <p>I’m currently a design student at the Institute of Art, Design + Technology, Dún Laoghaire studying Visual Communications. I enjoy working in a variety of different design areas be that print based or digital. I have a keen interest in how traditional mediums and the new digital tools that are now available can be used in tandem to create new user experiences be they augmented, virtual or mixed reality.</p>
+                <p>When I'm not working/studying, you might catch me halfway up a mountain somewhere, or with my head stuck in a good book wearing a pair of comfy slippers in front of the fireplace.</p>
             </div>
         </div>
+        <br><br>
         <div class="row">
             <div class="col-md-6"></div>
-            <div class="col-md-6 project1text textmove">
-                <p class="projectinfotext">—&nbsp &nbsp &nbsp Typography &nbsp &nbsp &nbsp Book Design &nbsp &nbsp &nbsp Web Design</p>
+            <div class="col-md-4 darkbackground">
+                <p class="project1header2">Give me a shout!</p>
+                <p class="project1text">Get in touch</p>
+                <a href="mailto:robert.tobin@gmx.com" class="linecontact2">Robert.Tobin@gmx.com</a>
+                <br>
+                <a href="#" class="linecontact2">→ Download profile and portfolio</a>
             </div>
         </div>
     </div>
@@ -193,34 +255,34 @@
         <div class="row">
             <div class="col-1"></div>
             <div class="col-10">
-                <p class="project1header">Type Specimen</p>
-                <p class="project1header2">— Design Practices:<br> &nbsp &nbsp &nbsp Print & Screen</p>
+                <p class="project1header">Robert Tobin</p>
+                <p class="project1header2">— Creative</p>
+                <p class="project1header2">— Innovative</p>
+                <p class="project1header2">— Flexible</p>
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-1"></div>
-            <div class="col-10 project1text">
-                <p>The aim of this project was to create a booklet and accompanying website for the promotion and sale of the typeface Ballinger. The core considerations was developing a core typographic system and using this in this in the application of print and screen UX/UI designs.</p>
+            <div class="col-10 project1text darkbackground">
+                <p>I’m currently a design student at the Institute of Art, <br> Design + Technology, Dún Laoghaire studying Visual Communications. I enjoy working in a variety of different design areas be that print based or digital. I have a keen interest in how traditional mediums and the new digital tools that are now available can be used in tandem to create new user experiences be they augmented, virtual or mixed reality.</p>
+                <p>When I'm not working/studying, you might catch me halfway up a mountain somewhere, or with my head stuck in a good book wearing a pair of comfy slippers in front of the fireplace.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-1"></div>
-            <div class="col-10 project1text">
-                <p>The main design mentality for this project was to create a clear and functional layout to best show the merits and use cases for the Ballinger typeface this philosophy informed all my design decisions at all stages of the project. Minimal decorative elements were used in the layout so as not to distract from the main emphasis of the font itself.</p>
-            </div>
-        </div>
-        <br>
-        <div class="row sscmg">
-            <div class="col-1"></div>
-            <div class="col-10 project1text textmove">
-                <p class="projectinfotext">—&nbsp &nbsp Typography&nbsp &nbsp Book Design&nbsp &nbsp Web Design</p>
+            <div class="col-8 darkbackground">
+                <p class="project1header2">Give me a shout!</p>
+                <p class="project1text">Get in touch</p>
+                <a href="mailto:robert.tobin@gmx.com" class="linecontact2">Robert.Tobin@gmx.com</a>
+                <br>
+                <a href="#" class="linecontact2">→ Download profile and portfolio</a>
             </div>
         </div>
     </div>
     <!-- Footer start -->
     <br>
-    <div class="container">
+    <div class="container darkbackgroundfooter footerpad">
         <hr />
         <p class="d-none d-sm-block whiteiconcolor m-3 txt-railway float-left">© 2020 Robert Tobin</p>
         <div class="text-center center-block">
@@ -229,9 +291,7 @@
             <a href="https://www.behance.net/RobertTobi18f6"><i class="whiteiconcolor footerhover p-2 fab fa-behance-square fa-3x social"></i></a>
             <a href="mailto:robert.tobin@gmx.com" class="d-none d-sm-block whiteiconcolor footercontact m-3 txt-railway float-right">Robert.Tobin@gmx.com</a>
         </div>
-        <a class="scrollToTopBtn"><img class="toTopBtn" src="images/angle-circle-arrow-up.svg" alt="back to top"></a>
     </div>
-    <br>
     <!-- Footer end -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
